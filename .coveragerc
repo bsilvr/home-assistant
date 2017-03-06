@@ -85,6 +85,10 @@ omit =
 
     homeassistant/components/*/thinkingcleaner.py
 
+    homeassistant/components/twilio.py
+    homeassistant/components/notify/twilio_sms.py
+    homeassistant/components/notify/twilio_call.py
+
     homeassistant/components/vera.py
     homeassistant/components/*/vera.py
 
@@ -234,6 +238,7 @@ omit =
     homeassistant/components/media_player/dunehd.py
     homeassistant/components/media_player/emby.py
     homeassistant/components/media_player/firetv.py
+    homeassistant/components/media_player/frontier_silicon.py
     homeassistant/components/media_player/gpmdp.py
     homeassistant/components/media_player/gstreamer.py
     homeassistant/components/media_player/hdmi_cec.py
@@ -262,6 +267,7 @@ omit =
     homeassistant/components/notify/aws_lambda.py
     homeassistant/components/notify/aws_sns.py
     homeassistant/components/notify/aws_sqs.py
+    homeassistant/components/notify/ciscospark.py
     homeassistant/components/notify/discord.py
     homeassistant/components/notify/facebook.py
     homeassistant/components/notify/free_mobile.py
@@ -289,8 +295,6 @@ omit =
     homeassistant/components/notify/syslog.py
     homeassistant/components/notify/telegram.py
     homeassistant/components/notify/telstra.py
-    homeassistant/components/notify/twilio_sms.py
-    homeassistant/components/notify/twilio_call.py
     homeassistant/components/notify/twitter.py
     homeassistant/components/notify/xmpp.py
     homeassistant/components/nuimo_controller.py
@@ -306,6 +310,7 @@ omit =
     homeassistant/components/sensor/broadlink.py
     homeassistant/components/sensor/dublin_bus_transport.py
     homeassistant/components/sensor/coinmarketcap.py
+    homeassistant/components/sensor/comed_hourly_pricing.py
     homeassistant/components/sensor/cpuspeed.py
     homeassistant/components/sensor/cups.py
     homeassistant/components/sensor/currencylayer.py
@@ -340,8 +345,8 @@ omit =
     homeassistant/components/sensor/lastfm.py
     homeassistant/components/sensor/linux_battery.py
     homeassistant/components/sensor/loopenergy.py
-    homeassistant/components/sensor/mhz19.py
     homeassistant/components/sensor/miflora.py
+    homeassistant/components/sensor/mint_finance.py
     homeassistant/components/sensor/modem_callerid.py
     homeassistant/components/sensor/mqtt_room.py
     homeassistant/components/sensor/netdata.py
@@ -358,6 +363,7 @@ omit =
     homeassistant/components/sensor/pocketcasts.py
     homeassistant/components/sensor/pvoutput.py
     homeassistant/components/sensor/qnap.py
+    homeassistant/components/sensor/ring.py
     homeassistant/components/sensor/sabnzbd.py
     homeassistant/components/sensor/scrape.py
     homeassistant/components/sensor/sensehat.py

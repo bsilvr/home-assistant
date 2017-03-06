@@ -216,7 +216,7 @@ class ZWaveClimate(ZWaveDeviceEntity, ClimateDevice):
         self.set_value(
             class_id=zwave.const.COMMAND_CLASS_THERMOSTAT_SETPOINT,
             index=self._index, data=temperature)
-        self.update_ha_state()
+        self.schedule_update_ha_state()
 
     def set_fan_mode(self, fan):
         """Set new target fan mode."""
@@ -246,3 +246,8 @@ class ZWaveClimate(ZWaveDeviceEntity, ClimateDevice):
         if self._fan_state:
             data[ATTR_FAN_STATE] = self._fan_state
         return data
+
+    @property
+    def dependent_value_ids(self):
+        """List of value IDs a device depends on."""
+        return None

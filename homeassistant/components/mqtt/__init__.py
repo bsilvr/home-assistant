@@ -13,7 +13,7 @@ import time
 import voluptuous as vol
 
 from homeassistant.core import callback
-from homeassistant.bootstrap import async_prepare_setup_platform
+from homeassistant.setup import async_prepare_setup_platform
 from homeassistant.config import load_yaml_config_file
 from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers import template, config_validation as cv
@@ -482,17 +482,17 @@ class MQTT(object):
         if not isinstance(topic, str):
             raise HomeAssistantError("topic need to be a string!")
 
-        if topic in self.topics:
-            return
-
         with (yield from self._paho_lock):
+            if topic in self.topics:
+                return
+
             result, mid = yield from self.hass.loop.run_in_executor(
                 None, self._mqttc.subscribe, topic, qos)
             yield from asyncio.sleep(0, loop=self.hass.loop)
 
-        _raise_on_error(result)
-        self.progress[mid] = topic
-        self.topics[topic] = None
+            _raise_on_error(result)
+            self.progress[mid] = topic
+            self.topics[topic] = None
 
     @asyncio.coroutine
     def async_unsubscribe(self, topic):

@@ -31,7 +31,7 @@ PyMata==2.13
 SoCo==0.12
 
 # homeassistant.components.notify.twitter
-TwitterAPI==2.4.4
+TwitterAPI==2.4.5
 
 # homeassistant.components.sensor.dnsip
 aiodns==1.1.1
@@ -118,7 +118,7 @@ dlipower==0.7.165
 dnspython3==1.15.0
 
 # homeassistant.components.sensor.dovado
-dovado==0.4.0
+dovado==0.4.1
 
 # homeassistant.components.sensor.dsmr
 dsmr_parser==0.6
@@ -155,7 +155,7 @@ fitbit==0.2.3
 fixerio==0.1.1
 
 # homeassistant.components.light.flux_led
-flux_led==0.13
+flux_led==0.15
 
 # homeassistant.components.notify.free_mobile
 freesms==0.1.1
@@ -166,6 +166,9 @@ freesms==0.1.1
 
 # homeassistant.components.switch.fritzdect
 fritzhome==1.0.2
+
+# homeassistant.components.media_player.frontier_silicon
+fsapi==0.0.7
 
 # homeassistant.components.conversation
 fuzzywuzzy==0.15.0
@@ -207,7 +210,7 @@ heatmiserV3==0.9.1
 hikvision==0.4
 
 # homeassistant.components.sensor.dht
-# http://github.com/adafruit/Adafruit_Python_DHT/archive/310c59b0293354d07d94375f1365f7b9b9110c7d.zip#Adafruit_DHT==1.3.0
+# http://github.com/adafruit/Adafruit_Python_DHT/archive/da8cddf7fb629c1ef4f046ca44f42523c9cf2d11.zip#Adafruit_DHT==1.3.0
 
 # homeassistant.components.switch.dlink
 https://github.com/LinuxChristian/pyW215/archive/v0.4.zip#pyW215==0.4
@@ -334,7 +337,7 @@ libsoundtouch==0.1.0
 liffylights==0.9.4
 
 # homeassistant.components.light.limitlessled
-limitlessled==1.0.4
+limitlessled==1.0.5
 
 # homeassistant.components.media_player.liveboxplaytv
 liveboxplaytv==1.4.9
@@ -355,6 +358,9 @@ mficlient==0.3.0
 # homeassistant.components.sensor.miflora
 miflora==0.1.16
 
+# homeassistant.components.sensor.mint_finance
+mintapi==1.23
+
 # homeassistant.components.tts
 mutagen==1.36.2
 
@@ -362,7 +368,7 @@ mutagen==1.36.2
 myusps==1.0.3
 
 # homeassistant.components.discovery
-netdisco==0.8.3
+netdisco==0.9.1
 
 # homeassistant.components.sensor.neurio_energy
 neurio==0.3.1
@@ -412,7 +418,7 @@ plexapi==2.0.2
 
 # homeassistant.components.sensor.mhz19
 # homeassistant.components.sensor.serial_pm
-pmsensor==0.3
+pmsensor==0.4
 
 # homeassistant.components.climate.proliphix
 proliphix==0.4.1
@@ -430,10 +436,10 @@ pushbullet.py==0.10.0
 pushetta==1.0.15
 
 # homeassistant.components.sensor.waqi
-pwaqi==2.0
+pwaqi==3.0
 
 # homeassistant.components.sensor.cpuspeed
-py-cpuinfo==0.2.3
+py-cpuinfo==0.2.6
 
 # homeassistant.components.hdmi_cec
 pyCEC==0.4.13
@@ -451,7 +457,7 @@ pyasn1-modules==0.0.8
 pyasn1==0.2.2
 
 # homeassistant.components.media_player.apple_tv
-pyatv==0.1.4
+pyatv==0.2.1
 
 # homeassistant.components.device_tracker.bbox
 # homeassistant.components.sensor.bbox
@@ -470,7 +476,6 @@ pycmus==0.1.0
 # pycups==1.9.73
 
 # homeassistant.components.zwave
-# homeassistant.components.binary_sensor.hikvision
 pydispatcher==2.0.5
 
 # homeassistant.components.sensor.ebox
@@ -495,13 +500,13 @@ pygatt==3.0.0
 pyharmony==1.0.12
 
 # homeassistant.components.binary_sensor.hikvision
-pyhik==0.0.7
+pyhik==0.1.0
 
 # homeassistant.components.homematic
 pyhomematic==0.1.22
 
 # homeassistant.components.sensor.hydroquebec
-pyhydroquebec==0.1.1
+pyhydroquebec==1.0.0
 
 # homeassistant.components.device_tracker.icloud
 pyicloud==0.9.1
@@ -510,7 +515,7 @@ pyicloud==0.9.1
 pyiss==1.0.1
 
 # homeassistant.components.remote.itach
-pyitachip2ir==0.0.5
+pyitachip2ir==0.0.6
 
 # homeassistant.components.sensor.lastfm
 pylast==1.8.0
@@ -555,7 +560,7 @@ pysma==0.1.3
 
 # homeassistant.components.device_tracker.snmp
 # homeassistant.components.sensor.snmp
-pysnmp==4.3.3
+pysnmp==4.3.4
 
 # homeassistant.components.media_player.clementine
 python-clementine-remote==1.0.1
@@ -639,6 +644,9 @@ radiotherm==1.2
 # homeassistant.components.rflink
 rflink==0.0.28
 
+# homeassistant.components.sensor.ring
+ring_doorbell==0.1.0
+
 # homeassistant.components.switch.rpi_rf
 # rpi-rf==0.9.6
 
@@ -714,8 +722,7 @@ tikteck==0.4
 # homeassistant.components.switch.transmission
 transmissionrpc==0.11
 
-# homeassistant.components.notify.twilio_call
-# homeassistant.components.notify.twilio_sms
+# homeassistant.components.twilio
 twilio==5.7.0
 
 # homeassistant.components.sensor.uber
@@ -772,7 +779,7 @@ yahooweather==0.8
 yeelight==0.2.2
 
 # homeassistant.components.light.yeelightsunflower
-yeelightsunflower==0.0.6
+yeelightsunflower==0.0.8
 
 # homeassistant.components.light.zengge
 zengge==0.2
